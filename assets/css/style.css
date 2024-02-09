@@ -4585,18 +4585,21 @@ h3.title {
   color: #fff;
 }
 
+
 .logo-clientes {
   border-radius: 12pt;
   margin-top: 1px;
   background-color: rgb(255, 255, 255);
-  padding: 1em 1em;
+  padding: 1em 2em;
   box-shadow: #00000020;
+  white-space: nowrap;
 }
 
 .logo-clientes-caixa {
-  width: 100%;
+  display: inline-block;
+  width: 960px;
   display: flex;
-  gap: 1em;
+  gap: 3em;
   overflow: hidden;
 }
 
@@ -4604,10 +4607,16 @@ h3.title {
   margin: 1 1 1 1;
   min-height: 110px;
   min-width: 270px;
-  animation: scroll 260s linear infinite;
+  animation: scroll 10s linear infinite;
 }
+
+.logo-clientes .logo-clientes-caixa img:hover {
+  animation-play-state: paused;
+}
+
 
 @keyframes scroll {
   0% {transform: translateX(0);}
-  100% {transform: translatex(-3000%)}
+  100% {transform: translatex(-100%)}
 }
+
