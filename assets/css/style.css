@@ -1096,9 +1096,7 @@ button {
 .header-navigation .header-right-nav ul li.nav-button .main-btn {
   padding: 7px 35px;
 }
-.nav-button-zap {
 
-}
 @media (max-width: 767px) {
   .header-navigation .header-right-nav ul li.nav-button {
     display: none;
@@ -3292,7 +3290,7 @@ h3.title {
   margin-right: 15px;
 }
 .testimonial-style-one .text-wrapper p {
-  margin-bottom: 25px;
+  margin-bottom: 1px;
 }
 .testimonial-style-one .text-wrapper .testimonial-arrows .slick-arrow {
   cursor: pointer;
@@ -4575,10 +4573,41 @@ h3.title {
 .footer-white .footer-copyright .text p {
   color: #fff;
 }
+
+/*AJUSTES*/
+
+
 .texto-diferencial {
   padding-left: 5% !important;
   padding-right: 5% !important;
   text-align: center;
   font-size: 16pt;
   color: #fff;
+}
+
+.logo-clientes {
+  border-radius: 12pt;
+  margin-top: 1px;
+  background-color: rgb(255, 255, 255);
+  padding: 1em 1em;
+  box-shadow: #00000020;
+}
+
+.logo-clientes-caixa {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.logo-clientes-item img {
+  margin: 1 1 1 1;
+  min-height: 110px;
+  min-width: 270px;
+  animation: scroll 260s linear infinite;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-3000%)}
 }
