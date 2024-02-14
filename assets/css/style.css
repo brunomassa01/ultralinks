@@ -146,7 +146,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h1,
@@ -158,7 +158,7 @@ h6 {
   color: #0A1426;
   margin: 0px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h1 {
@@ -512,7 +512,7 @@ button {
   animation-timing-function: linear;
 }
 
-@-webkit-keyframes float-x {
+@keyframes float-x {
   0% {
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
@@ -554,7 +554,7 @@ button {
     transform: translateX(-20px);
   }
 }
-@-webkit-keyframes float-y {
+@keyframes float-y {
   0% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
@@ -848,7 +848,7 @@ button {
   display: inline-block;
   font-size: 14px;
   margin-left: 5px;
-  float: right;
+  float: none;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-navigation .main-menu ul > li.has-children > a:after {
@@ -3290,7 +3290,7 @@ h3.title {
   margin-right: 15px;
 }
 .testimonial-style-one .text-wrapper p {
-  margin-bottom: 1px;
+  margin-bottom: 25px;
 }
 .testimonial-style-one .text-wrapper .testimonial-arrows .slick-arrow {
   cursor: pointer;
@@ -4573,10 +4573,6 @@ h3.title {
 .footer-white .footer-copyright .text p {
   color: #fff;
 }
-
-/*AJUSTES*/
-
-
 .texto-diferencial {
   padding-left: 5% !important;
   padding-right: 5% !important;
@@ -4584,7 +4580,6 @@ h3.title {
   font-size: 16pt;
   color: #fff;
 }
-
 
 .logo-clientes {
   border-radius: 12pt;
@@ -4607,7 +4602,7 @@ h3.title {
   margin: 1 1 1 1;
   min-height: 110px;
   min-width: 270px;
-  animation: scroll 10s linear infinite;
+  animation: scroll 7s linear infinite;
 }
 
 .logo-clientes .logo-clientes-caixa img:hover {
@@ -4617,6 +4612,5 @@ h3.title {
 
 @keyframes scroll {
   0% {transform: translateX(0);}
-  100% {transform: translatex(-100%)}
+  100% {transform: translatex(-100%);}
 }
-
