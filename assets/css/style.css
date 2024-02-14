@@ -4593,7 +4593,7 @@ h3.title {
   display: flex;
   width: max-content;
   gap: 3em;
-  animation: carousel-animation 60s linear infinite;
+  animation: carousel-animation 160s linear infinite;
   justify-content: flex-start; /* Alterado para flex-start */
   margin-right: -210px; /* Adicionado para permitir que o primeiro logo apareça imediatamente após o último */
 }
