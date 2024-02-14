@@ -4581,36 +4581,44 @@ h3.title {
   color: #fff;
 }
 
-.logo-clientes {
-  border-radius: 12pt;
-  margin-top: 1px;
-  background-color: rgb(255, 255, 255);
-  padding: 1em 2em;
-  box-shadow: #00000020;
-  white-space: nowrap;
-}
-
-.logo-clientes-caixa {
-  display: inline-block;
-  width: 960px;
-  display: flex;
-  gap: 3em;
+.carousel-container { /* CAIXA DE LOGOTIPOS */
+  max-width: 960px;
   overflow: hidden;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
 }
 
-.logo-clientes-item img {
-  margin: 1 1 1 1;
-  min-height: 110px;
-  min-width: 270px;
-  animation: scroll 650s linear infinite;
+.carousel { /*ANIMAÇÃO DOS LOGOTIPOS*/
+  display: flex;
+  width: max-content;
+  gap: 3em;
+  animation: carousel-animation 60s linear infinite;
+  justify-content: flex-start; /* Alterado para flex-start */
+  margin-right: -210px; /* Adicionado para permitir que o primeiro logo apareça imediatamente após o último */
 }
 
-.logo-clientes .logo-clientes-caixa img:hover {
+.logo { /* CADA LOGOTIPO*/
+  width: 210px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo img { /* LOGOTIPO INDIVIDUAL*/
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@keyframes carousel-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.logo:hover {
   animation-play-state: paused;
 }
 
-
-@keyframes scroll {
-  0% {transform: translateX(0);}
-  100% {transform: translatex(-100%);}
-}
