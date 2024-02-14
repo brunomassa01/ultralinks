@@ -4602,7 +4602,7 @@ h3.title {
   margin: 1 1 1 1;
   min-height: 110px;
   min-width: 270px;
-  animation: scroll 1500s linear infinite;
+  animation: scroll 650s linear infinite;
 }
 
 .logo-clientes .logo-clientes-caixa img:hover {
