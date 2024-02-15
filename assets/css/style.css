@@ -258,8 +258,8 @@ textarea.form_control {
 
 .sub-title {
   color: #40b9bc;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 14px;
 }
 .sub-title.sub-title-bg {
@@ -270,7 +270,7 @@ textarea.form_control {
 }
 
 .section-title h2 {
-  text-transform: capitalize;
+  text-transform: none;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title h2 {
@@ -869,8 +869,9 @@ button {
   color: #0A1426;
 }
 .header-navigation .main-menu ul > li > a {
+  align-items: center;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   color: #0A1426;
   font-weight: 600;
   text-transform: capitalize;
@@ -4622,3 +4623,28 @@ h3.title {
   animation-play-state: paused;
 }
 
+#formato-novo {
+  font-weight: bold;
+  font-family: 'Poppins', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  color: #003a49;
+  padding: 3px 30px 3px 0px;
+  margin-bottom: 30px;
+}
+
+#texto-extra {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+#formato-novo-branco {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: 'Poppins', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  color: #fff;
+  text-transform: none;
+  padding: 3px 30px 3px 0px;
+  margin-bottom: 30px;
+}
